@@ -13,9 +13,13 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 192.168.1.40
-    health-check-url:     http://192.168.1.40:8082/actuator/health
-    status-page-url:      http://192.168.1.40:8082/actuator/info
-    home-page-url:        http://192.168.1.40:8082/health
+    #health-check-url:     http://192.168.1.40:8082/actuator/health
+    #status-page-url:      http://192.168.1.40:8082/actuator/info
+    #home-page-url:        http://192.168.1.40:8082/health
+
+    home-page-url:    http://192.168.1.40:8082/
+    status-page-url:  http://192.168.1.40:8082/
+    health-check-url: http://192.168.1.40:8082/actuator/health
 
 management:
   endpoints:
